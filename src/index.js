@@ -1,17 +1,12 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyCP3gWSCtI4aCRvQ6WHG13CTEnO-pAvl4Q",
-  authDomain: "banco-de-prueba-5005d.firebaseapp.com",
-  databaseURL: "https://banco-de-prueba-5005d.firebaseio.com",
-  projectId: "banco-de-prueba-5005d",
-  storageBucket: "banco-de-prueba-5005d.appspot.com",
-  messagingSenderId: "51822716336",
-  appId: "1:51822716336:web:b9638d804f41f164d66275",
-  measurementId: "G-YXCN833T83"
-};
+  "apiKey":"AIzaSyB274QGQF2McYAlFKGn5I1cQAtgoQlQiRM",
+  "authDomain":"iiilll.firebaseapp.com",
+  "databaseURL":"https://iiilll.firebaseio.com"
+}
 
 firebase.initializeApp(firebaseConfig);
-let database = firebase.database().ref("messages/");
+let database = firebase.database().ref("-1000/");
 database.orderByChild("value").on("child_added", function(data) {
   //console.log(data.val().cantidad);
 });
